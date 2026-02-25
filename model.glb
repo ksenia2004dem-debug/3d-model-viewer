@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>AR Demo — model-viewer</title>
+
+  <!-- Подключение model-viewer -->
+  <script type="module"
+    src="D:\Загрузки\Telegram Desktop\1_светильщик.glb">
+  </script>
+
+  <style>
+    body {
+      margin: 0;
+      background: #111;
+    }
+    model-viewer {
+      width: 100vw;
+      height: 100vh;
+    }
+  </style>
+</head>
+<body>
+
+  <model-viewer
+    src="model.glb"
+    ios-src="model.usdz"
+    environment-image="studio_small_08_2k.hdr"
+    exposure="1.1"
+    shadow-intensity="1"
+    auto-rotate
+    camera-controls
+    ar
+    ar-modes="scene-viewer quick-look webxr"
+    ar-scale="auto"
+    alt="3D модель для AR просмотра">
+
+  </model-viewer>
+
+</body>
+</html>
